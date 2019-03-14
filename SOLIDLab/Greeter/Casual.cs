@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Greeter
 {
-    // I want to be able to add greetings to other personalities
+    /**
+        Casual class that indicate user would want to have a casual greeting.
+     */
     public class Casual : FormalityStrategy{
         public String greet(){
             return "Sup bro?"; 

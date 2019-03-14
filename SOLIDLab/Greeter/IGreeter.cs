@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Greeter
 {
-    // I want to be able to add greetings to other personalities
-
+    /**
+        Abstraction of greeter so that other class can use greeter
+    */   
     public interface IGreeter
     {   
         public void setFormality(FormalityStrategy formality);
