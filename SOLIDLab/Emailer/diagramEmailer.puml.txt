@@ -1,0 +1,26 @@
+@startuml                                   
+
+interface IWeatherAlert {
+    + GenerateWeatherAlert(weatherConditions:String) : String
+}
+ 
+class Emailer {
+    + GenerateWeatherAlert(weatherConditions:String) : String
+}
+
+class Phone {
+    + GenerateWeatherAlert(weatherConditions:String) : String
+}
+
+class WeatherTracker {
+    CurrentConditions : String
+    IWeatherAlert : IWeatherAlert
+    + WeatherTracker()
+    + SetCurrentConditions(weatherDescription:String) : void
+}
+
+WeatherTracker --> IWeatherAlert
+Emailer --|> IWeatherAlert
+Phone --|> IWeatherAlert
+
+@enduml

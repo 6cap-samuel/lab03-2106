@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOlIDLab", "ConsoleApp1\SOlIDLab.csproj", "{FE146AFD-DFBF-4CBC-9A79-DA5E147006DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE146AFD-DFBF-4CBC-9A79-DA5E147006DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE146AFD-DFBF-4CBC-9A79-DA5E147006DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE146AFD-DFBF-4CBC-9A79-DA5E147006DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE146AFD-DFBF-4CBC-9A79-DA5E147006DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {674B9E76-28A7-4EE6-88A3-5D770A3B42D4}
+	EndGlobalSection
+EndGlobal

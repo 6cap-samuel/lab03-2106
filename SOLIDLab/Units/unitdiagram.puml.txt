@@ -1,0 +1,38 @@
+@startuml
+ 
+interface Apartment {
+}
+
+interface IApartmentFactory {
+    + SetSquareFootage(sqft:int) : void
+}
+
+class ApartmentFactory {
+    + squareFootage : int
+    + numberOfBedrooms : int
+    + SetSquareFootage(sqft:int) : void
+}
+
+class PenthouseSuite {
+    + PenthouseSuite()
+}
+
+class Studio {
+    + Studio()
+}
+ 
+class UnitUpgrader {
+    + UpgradeRooms(apartment:Apartment) : void
+}
+
+UnitUpgrader --> Apartment
+UnitUpgrader --> IApartmentFactory
+
+ApartmentFactory --> Studio
+ApartmentFactory --> PenthouseSuite
+ApartmentFactory ..|> IApartmentFactory
+
+Apartment <|.. PenthouseSuite
+Apartment <|.. Studio
+
+@enduml

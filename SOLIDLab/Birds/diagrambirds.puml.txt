@@ -1,0 +1,31 @@
+@startuml                                   
+interface Bird {
+    molt() : void
+}
+
+interface IEagle{
+    fly() : void
+}
+
+interface IPenguin{
+    Swim() : void
+}
+
+
+ 
+class Eagle {
+    - CurrentLocation : string
+    - NumberOfFeathers : int
+    + Eagle(initialFeatherCount:int)
+}
+Bird <|.. Eagle
+IEagle <|.. Eagle
+ 
+class Penguin {
+    CurrentLocation : String
+    NumberOfFeathers : int
+    + Penguin(initialFeatherCount:int)
+}
+Bird <|.. Penguin
+IPenguin <|.. Penguin
+@enduml

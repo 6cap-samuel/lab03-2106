@@ -1,0 +1,33 @@
+@startuml
+
+interface IGreeter{
+    + Greet() : String
+    + setFormality(_formalityStrategy: FormalityStrategy) : void
+}
+
+class Greeter {
+    _formality :  FormalityStrategy
+}
+
+abstract class FormalityStrategy{
+    + Greet(): String
+}
+
+class Formal{
+    + Greet(): String
+}
+
+class Casual{
+    + Greet(): String
+}
+
+class Intimate{
+    + Greet(): String
+}
+
+Greeter ..|> IGreeter
+Intimate --|> FormalityStrategy
+Formal --|> FormalityStrategy
+Casual --|> FormalityStrategy
+Greeter ..* FormalityStrategy
+@enduml
