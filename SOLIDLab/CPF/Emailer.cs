@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.CPF
 {
+    /**
+     * Emailer class for handling email sending (SRP)
+     */
     class Emailer
     {
         public string sendEmail(String clientEmail)

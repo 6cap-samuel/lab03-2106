@@ -5,6 +5,11 @@ using SOLIDLab.CPF;
 
 namespace ConsoleApp1.CPF
 {
+    /**
+     * ClientRepository handles the data access to SQL, abstracts
+     * data access from the other layers of the program. Validation
+     * has been removed and transfered to a utility class. (SRP)
+     */
     class ClientRepository : IRepository<Client>
     {
         public string Add(Client client)

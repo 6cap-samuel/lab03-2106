@@ -9,6 +9,9 @@ namespace ConsoleApp1.CPF
 {
     class ClientUtils
     {
+        /**
+         * Utility class that handles validation of clients
+         */
         public static Boolean validateClient(Client client)
         {
             if (!client.Email.Contains("@"))
