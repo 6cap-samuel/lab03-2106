@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Birds
 {
-    interface IPenguin: SOLIDLab.Birds.Bird
+    //this interface is implemented for
+    //penguin with penguin-only functions
+    interface IPenguin : SOLIDLab.Birds.Bird
     {
         void Swim();
     }

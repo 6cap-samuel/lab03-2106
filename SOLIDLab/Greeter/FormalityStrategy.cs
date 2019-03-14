@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Greeter
 {
-    // I want to be able to add greetings to other personalities
-    public abstract class FormalityStrategy{
+    /**
+        Strategy that the Greeter would want to adapt.
+     */        
+     public abstract class FormalityStrategy{
+         
+        /**
+            By default says hello.
+        */    
         public String greet(){
             return "Hello.";
         }
