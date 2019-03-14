@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Units
 {
+    /**
+     * Create an interface for the factory
+     */
     class ApartmentFactory : IApartmentFactory
     {
+        /**
+         * Returns the object based on the input type
+         */
         public Apartment Make(String type)
         {
             switch (type)

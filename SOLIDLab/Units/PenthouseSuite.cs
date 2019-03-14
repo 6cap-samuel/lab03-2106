@@ -4,6 +4,9 @@
 
 namespace SOLIDLab.Units
 {
+    /**
+     * Class PenthouseSuite that will inherit Apartment
+     */
     public class PenthouseSuite : Apartment
     {
         public PenthouseSuite()

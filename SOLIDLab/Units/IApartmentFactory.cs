@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace SOLIDLab.Units
 {
+    /**
+     * Interface that will be shared between all apartments
+     * that are created with Factory
+     */
     interface IApartmentFactory
     {
         Apartment Make(String type);
